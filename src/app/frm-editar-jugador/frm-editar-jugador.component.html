@@ -1,0 +1,76 @@
+<div class="modal fade frmEditar">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form [formGroup]="frmEditar" (ngSubmit)="editar()" autocomplete="off">
+          <div class="form-group">
+            <label for="codigo">Codigo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="codigo"
+              formControlName="codjuga"
+            />
+          </div>
+          <div class="form-group">
+            <label for="nombre">Nombre Completos</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              formControlName="nombre"
+            />
+          </div>
+          <div class="form-group">
+            <label for="edad">Edad</label>
+            <input
+              type="text"
+              class="form-control"
+              id="edad"
+              formControlName="edad"
+            />
+          </div>
+          <div class="form-group">
+            <label for="equipo">Equipo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="equipo"
+              formControlName="equipo"
+            />
+          </div>
+          <div class="form-group">
+            <label for="posicion">Posicion</label>
+            <input
+              type="text"
+              id="pais"
+              class="form-control"
+              formControlName="posicion"
+            />
+          </div>
+          <div class="form-group">
+            <label for="pais">Pais</label>
+            <input
+              type="text"
+              id="pais"
+              class="form-control"
+              formControlName="pais"
+            />
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">
+              Editar
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary btn-block"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
